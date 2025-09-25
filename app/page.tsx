@@ -47,7 +47,7 @@ class DotBuffer {
 // Tekst renderen op de dot-matrix
 function renderCustomText(text:string,align:'center'|'left'|'right',buf:DotBuffer,spacing=1){
   const charW=5,charH=5,totalW=text.length*(charW+spacing)-spacing;
-  let startX=align==='center'?Math.floor((buf.w-totalW)/2):0;
+  const startX=align==='center'?Math.floor((buf.w-totalW)/2):0;
   const startY=Math.floor((buf.h-charH)/2);
   for(let i=0;i<text.length;i++){
     const matrix=characters[text[i].toUpperCase()]||characters[" "];
