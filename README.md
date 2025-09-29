@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Flipdots Paxcon 🎮
 
-## Getting Started
+Dit project is een kleine game gemaakt met React en TypeScript. Het spel werkt op een virtuele LED-matrix (flipdot-scherm). Het idee is gebaseerd op de klassieke Paxcon-game, waarbij je gebieden moet afbakenen terwijl vijanden over het scherm bewegen.
 
-First, run the development server:
+⚙️ Functies
 
-```bash
+Welkomstscherm met tekst op de LED-matrix
+
+Paxcon-gameplay: loop rond, teken lijnen en vul gebieden in
+
+Vijanden bewegen rond en kunnen je trail raken
+
+Score bijhouden en percentage gevuld
+
+Levenssysteem + Game Over / Win scherm
+
+Start, pauzeer, herstart en terug-knoppen
+
+Gemaakt met React hooks (useState, useEffect, useRef, useMemo)
+
+🎯 Doel van het spel
+
+Vul minimaal 80% van het speelveld om te winnen.
+
+Pas op dat vijanden je trail niet raken, anders verlies je een leven.
+
+Als al je levens op zijn → Game Over.
+
+⌨️ Besturing
+
+Pijltjestoetsen om te bewegen: ⬆️ ⬇️ ⬅️ ➡️
+
+Pauze/Verder knop om het spel te pauzeren of te hervatten
+
+Herstart om opnieuw te beginnen
+
+Terug naar welkomstscherm
+
+🚀 Installatie
+
+Clone dit project:
+
+git clone https://github.com/jouw-gebruikersnaam/flipdots-paxcon.git
+cd flipdots-paxcon
+
+
+Installeer dependencies:
+
+npm install
+
+
+Start de app in ontwikkelmodus:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open http://localhost:3000
+ in je browser.
